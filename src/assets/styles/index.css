@@ -1,23 +1,30 @@
+@import url("./animation.css");
 body {
   margin: 0;
   background: linear-gradient(#000000, #00042f, #000a71);
-  background: linear-gradient(#000a71, #00042f, #000000);
+  background: linear-gradient(#000a76, #00042f, #000000);
   font-family: "Pangolin", cursive;
+  height: inherit;
 }
 a {
   text-decoration: none;
   color: white;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*--------------------Header-----*/
 
 .header {
   height: 60px;
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000000;
+  background-color: #03045e;
 }
 .header__img {
   width: 120px;
@@ -59,6 +66,16 @@ a {
 }
 
 /*--------------------hero-----*/
+.cicle {
+  background: #03045e;
+  height: inherit;
+  width: 80%;
+  -moz-border-radius: 0 0 90px 90px;
+  -webkit-border-radius: 0 0 90px 90px;
+  border-radius: 0 0 90px 90px;
+  display: table;
+  margin: auto;
+}
 .hero {
   display: flex;
   justify-content: space-between;
@@ -115,7 +132,7 @@ a {
   display: none;
   width: 60px;
   height: 50px;
-  background: linear-gradient(#00a8e8, #000a71, #df57bc);
+  background: linear-gradient(#00a8e8, #90e0ef);
   opacity: 0.5;
   border-radius: 20px;
   text-align: center;
@@ -155,7 +172,7 @@ a {
   width: 300px;
   min-height: 300px;
   position: absolute;
-  top: 85px;
+  top: 0px;
   background: linear-gradient(#505050, #000, #00a8e8);
   background: linear-gradient(#00a8e8, #000, #df57bc);
   background: linear-gradient(#df57bc, #000, #00a8e8);
@@ -166,7 +183,7 @@ a {
 /*--------------------about-----*/
 
 .about {
-  width: 100%;
+  width: 80%;
 }
 .about__container {
   margin: auto;
@@ -178,9 +195,15 @@ a {
 .about__container--aboutme {
   width: 70%;
 }
+.about__container--aboutme h1 {
+  color: #90e0ef;
+}
 .about__container--skills {
   display: flex;
   flex-direction: column;
+}
+.about__container--skills h1 {
+  color: #90e0ef;
 }
 .about-skills {
   display: flex;
@@ -199,7 +222,7 @@ a {
 /*--------------------projects-----*/
 
 .projects {
-  width: 90%;
+  width: 70%;
   margin: auto;
   margin-bottom: 80px;
   overflow: none;
@@ -211,7 +234,7 @@ a {
   flex-wrap: nowrap;
 }
 .projects__title {
-  color: #00a8e8;
+  color: #90e0ef;
   font-size: 40px;
   margin-bottom: 80px;
 }
@@ -227,7 +250,7 @@ a {
 }
 .projects__container:hover .projects-item {
   opacity: 0.3;
-  background-color: #00a8e8;
+  background-color: #ade8f4;
 }
 
 .projects__container:hover .projects-item:hover {
@@ -237,7 +260,7 @@ a {
   justify-content: center;
   align-content: center;
   margin: 25px auto;
-  background-color: #f00699;
+  background-color: #0077b6;
 }
 
 .projects-image {
@@ -282,9 +305,10 @@ a {
 /*--------------------contact-----*/
 
 .contact {
-  width: 100%;
-  background-color: #000a71;
+  width: 80%;
+  background-color: #03045e;
   color: white;
+  height: inherit;
 }
 .contact__title {
   font-size: 32px;
@@ -330,7 +354,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px 25px 20px;
+  margin: 60px 25px 0px;
   height: 100px;
 }
 
@@ -367,5 +391,8 @@ input {
   }
   .hero__social {
     margin-bottom: 30px;
+  }
+  .about__container--aboutme {
+    width: 100%;
   }
 }
