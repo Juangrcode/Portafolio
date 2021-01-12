@@ -10,6 +10,10 @@ a {
   text-decoration: none;
   color: white;
 }
+p {
+  font-size: 20px;
+}
+
 .container {
   width: var(width--spacing);
   display: flex;
