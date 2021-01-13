@@ -48,7 +48,6 @@ p {
 }
 .header__container li {
   list-style: none;
-  padding-right: 10px;
 }
 .header-menu__img {
   cursor: pointer;
@@ -432,3 +431,20 @@ input {
     border-bottom: 2px solid #90e0ef;
   }
 }
+
+/* Mobile First
+min-width = desde
+
+@media screen and (min-width:320px){}
+@media screen and (min-width:480px){}
+@media screen and (min-width:768px){}
+@media screen and (min-width:1024px){}
+
+
+Desktop First
+max-width = hasta
+
+@media screen and (max-width:1024px){}
+@media screen and (max-width:768px){}
+@media screen and (max-width:480px){}
+@media screen and (max-width:320px){} */
