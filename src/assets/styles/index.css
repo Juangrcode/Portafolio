@@ -1,9 +1,9 @@
-@import url("./animation.css");
+@import url('./animation.css');
 body {
   margin: 0;
   background: linear-gradient(#000000, #00042f, #000a71);
   background: linear-gradient(#000a76, #00042f, #000000);
-  font-family: "Pangolin", cursive;
+  font-family: 'Pangolin', cursive;
   height: inherit;
 }
 a {
@@ -70,13 +70,14 @@ p {
 .hero__title {
   text-align: center;
   margin: auto;
+  margin-right: 50px;
 }
 .hero__title--name strong {
   color: #00a8e8;
 }
 .hero__title--name {
   font-size: 45px;
-  font-family: "Pangolin", cursive;
+  font-family: 'Pangolin', cursive;
   color: white;
   text-align: center;
 }
@@ -244,19 +245,19 @@ p {
 }
 
 .projects-image {
-  box-sizing: content-box;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .projects-item__text {
   padding: 2%;
   color: white;
-  width: 60%;
+  width: 100%;
 }
 .projects-item__image {
   padding: 1%;
-  width: 40%;
-  height: 100%;
+  width: 100%;
+  height: 390px;
 }
 .projects-item__text strong {
   color: #00a8e8;
@@ -401,6 +402,9 @@ input {
   }
   .about__container--aboutme {
     width: 100%;
+  }
+  .hero__title {
+    margin-right: 0;
   }
 }
 
